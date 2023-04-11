@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <?php
-    $n = 30;
-    for ($i = 0; $i < $n; $i++) {
-      $dada[$i] = rand(10, 100);
+$n = 20;
+
+for ($x = 0; $x <$n; $x++)
+{
+	$data[$x]= rand(0,100);
     }
-    sort($dada);
-    echo implode(", ", $dada) . "<br>";
-    ?>
+
+    
+sort($data);
+
+$clength = count($data);
+for($x = 0; $x < $clength; $x++) {
+  echo "$data[$x] ";
+}
+
+
+?>
 
 </body>
 </html>
